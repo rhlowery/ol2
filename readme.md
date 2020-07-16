@@ -1,5 +1,17 @@
 # OpenLayers 2
 
+**Pentaho Build Notes**:
+
+1. Make changes in the `master` branch.
+2. Make a PR for the origin's `master`.
+3. Cherry pick the `master` changes to the `release` branch.
+4. Update the `VERSION_NUMBER` in files `lib/OpenLayers.js` and `lib/OpenLayers/SingleFile.js`.
+5. Make a PR for the origin's `release`.
+6. To build, run `npm install` once, and then `npm run build`.
+7. The minified output file is at `dist/OpenLayers.js`.
+
+---
+
 Copyright (c) 2005-2015 OpenLayers Contributors. See authors.txt for
 more details.
 

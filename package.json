@@ -1,0 +1,17 @@
+{
+  "name": "ol2",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pentaho/ol2.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && mkdirp dist && cd ./build && ./build.py -c uglify-js full ../dist/OpenLayers.js"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.8.0",
+    "rimraf": "^3.0.2",
+    "mkdirp": "^1.0.4"
+  }
+}
